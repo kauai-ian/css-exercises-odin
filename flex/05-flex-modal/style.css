@@ -15,11 +15,42 @@ body {
   justify-content: center;
 }
 
+
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+
+/* I had originally thought I would have to create a new container. Turns out that just complicates things. Much simpler to nest the button under the div. 
+
+.container {
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 2px solid green;
+}
+*/
+.header {
+  font-size: 18px;
+  font-weight:600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  margin-bottom: 16px;
 }
 
 .icon {
@@ -33,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /*this keeps the exclamation icon from shrinking*/
 }
 
 .close-button {

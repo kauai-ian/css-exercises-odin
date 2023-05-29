@@ -2,14 +2,56 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-img {
-  width: 100px;
-  height: 100px;
-}
+
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  /*border: 1px solid red;*/
+}
+
+.columns {
+  /*border: 1px solid purple;*/
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/*
+I created a container for the row of items to be placed horizontally (text and images) with the div class columns. 
+Then I created a container around each image and text (4 total columns) and made them the same class column-children. 
+I then applied flexbox, I used justify content to center them, and chose the flex direction of column to get them to go vertical.
+*/
+
+.column-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*border: 1px solid green;*/
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  /*border: 1px solid red;*/
+}
+/*
+I made sure to center the text using the text-align code
+*/
+.text {
+  /*border: 1px solid red;*/
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
 }
 
 /* do not edit this footer */

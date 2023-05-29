@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +26,39 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items;
+  padding: 16px;
+  }
+/*I had to center the content and get it lined up in a column so I used the container to align and justify the items, and I used a flex-grow of 1 if it needed to grow, a flex shrink of 0 and a flex-basis of auto revert to defeault width. */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+/*Anytime there are lists I have to make sure to set margin and padding at zero otherwise the text overlaps. Then add a gap after. */
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 32px;
+}
+
+a {
+  color: #706f6f;
+  text-decoration: none; /*this removes the underlines in the links.*/
+}
+
+.footer {
+  background-color: #eee;
 }

@@ -8,13 +8,18 @@
     <title>Modal</title>
   </head>
   <body>
-    <div class="modal">
-      <div class="icon">!</div>
-      <div class="header">Are you sure you want to do that?</div>
-      <button class="close-button">✖</button>
-      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-      <button class="continue">Continue</button>
-      <button class="cancel">Cancel</button>
-    </div>
+    
+      <div class="modal">
+        <div class="icon">!</div>
+        <div class="container"><!--I did not have to add an extra container that was slightly smaller.-->
+          <div class="header">Are you sure you want to do that? 
+            <!--I have to bring the button into the header as a child so that they rest on the same line-->
+            <button class="close-button">✖</button>
+          </div>
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+          <button class="continue">Continue</button>
+          <button class="cancel">Cancel</button>
+      </div>
+      </div>
   </body>
 </html>
